@@ -9,6 +9,8 @@ UserParameter=system.sensor[*],powershell.exe C:\OpenHardwareMonitor\system-sens
 Получение всех датчиков: 
 (Get-WmiObject -Namespace Root\OpenHardwareMonitor -Class sensor ) | ft Identifier,name,SensorType,Value
 
+Чтобы скрипт запускался необходимо в powershell под администратором выполнить команду  Set-ExecutionPolicy RemoteSigned с ответом Y.
+
 Дашборд можно сделать по своим желаниям, у меня так для удобства.
 
 ![image](https://user-images.githubusercontent.com/47965173/207835388-09bedcc3-956a-43d1-9666-ebaab814c130.png)
