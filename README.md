@@ -7,14 +7,17 @@
 https://openhardwaremonitor.org/
 
 В zabbix_agentd.conf
+
 UserParameter=system.sensor[*],powershell.exe C:\OpenHardwareMonitor\system-sensor.ps1 $1 $2 $3 $4
 
 Возможно потребуется в конфиге добавить параметры:
+
  UnsafeUserParameters=1
  Timeout=15
  AllowKey=system.run[*]
 
 Получение всех датчиков: 
+
 (Get-WmiObject -Namespace Root\OpenHardwareMonitor -Class sensor ) | ft Identifier,name,SensorType,Value
 
 Чтобы скрипт запускался необходимо в powershell под администратором выполнить команду  Set-ExecutionPolicy RemoteSigned с ответом Y.
