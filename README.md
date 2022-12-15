@@ -9,4 +9,7 @@ UserParameter=system.sensor[*],powershell.exe C:\OpenHardwareMonitor\system-sens
 Получение всех датчиков: 
 (Get-WmiObject -Namespace Root\OpenHardwareMonitor -Class sensor ) | ft Identifier,name,SensorType,Value
 
-![image](https://user-images.githubusercontent.com/47965173/207834990-4d2d312a-aaf9-462c-ab74-b12ca46c7bbe.png)
+Дашборд можно сделать по своим желаниям, у меня так для удобства.
+
+![image](https://user-images.githubusercontent.com/47965173/207835388-09bedcc3-956a-43d1-9666-ebaab814c130.png)
+
