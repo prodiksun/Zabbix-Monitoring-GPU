@@ -13,7 +13,9 @@ UserParameter=system.sensor[*],powershell.exe C:\OpenHardwareMonitor\system-sens
 Возможно потребуется в конфиге добавить параметры:
 
  UnsafeUserParameters=1
+ 
  Timeout=15
+ 
  AllowKey=system.run[*]
 
 Получение всех датчиков: 
